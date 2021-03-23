@@ -1,0 +1,16 @@
+{
+  "name": "express_handlebars",
+  "version": "1.0.0",
+  "description": "belajar express dengan handlebars",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "irwanrobi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1"
+  }
+}

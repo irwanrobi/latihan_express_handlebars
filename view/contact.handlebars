@@ -1,0 +1,37 @@
+<main class="container_fluid flex_center">
+
+    <h1>Contact Page</h1>
+
+    {{> ContactForm }}
+
+    <!-- CONDITIONAL RENDERING -->
+    {{#if message}}
+
+    <div class="card_info">
+
+        <div class="card_info_header">
+            Pesan berhasil dikirim..
+            <a class="material-icons" href="/contact">cancel</a>
+        </div>
+
+        <div class="card_info_body">
+
+            <h3>Nama Pengirim</h3>
+            <p>{{ name }}</p>
+
+            <h3>No. HP</h3>
+            <p>{{ phone }}</p>
+
+            <h3>Email</h3>
+            <p>{{ email }}</p>
+
+            <h3>Message</h3>
+            <p>{{ message }} </p>
+        </div>
+    </div>
+
+    {{/if}}
+    <!-- end CONDITIONAL RENDERING -->
+
+
+</main>
